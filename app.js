@@ -12,7 +12,6 @@ var tetris = (function() {
     var gameTable = document.getElementById("grid");
     for (var y = 0; y < 22; y++) {
       var newRow = document.createElement("tr");
-      newRow.class = y.toString();
       newRow.setAttribute("class", y);
       if (y === 1) {
         newRow.setAttribute("style", "border-bottom: 1px double tomato");
