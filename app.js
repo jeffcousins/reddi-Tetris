@@ -317,7 +317,7 @@ var tetris = (function() {
          * The reason I'm passing linesBelow instead of deadCount is because
          * of a minor bug. Let's say dead blocks were stacked near the top
          * on the far-left side, and I clear the bottom four lines with a
-         * "straight line" shape vie the empty space to get there on the
+         * "straight line" shape via the empty space to get there on the
          * right side of the grid. Cells on the third row (y) would be
          * copied to cells on the seventh row (y + deadCount) at the end of
          * this block of code, but there's no way to duplicate an out-of-
