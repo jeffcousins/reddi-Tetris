@@ -420,7 +420,7 @@ var tetris = (function() {
    * finalAct() adds some "Game Over" functionality to be executed on an ID
    * that doesn't exist at the time the document loads. I had to use event
    * delegation on '#frame' since '#sorry' is created later ad lib. Tricky.
-   * P.S. Sorry! Â¯\_(ãƒ„)_/Â¯
+   * P.S. Sorry! ¯\_(ツ)_/¯
    */
   var finalAct = function() {
     $('#frame').on('click', '#sorry', function() {
