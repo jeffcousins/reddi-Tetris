@@ -170,7 +170,7 @@ var tetris = (function() {
    * shapes[shapeID] and will updateShape() the currentShape to
    * the correct quartet of [x, y] coordinates.
    *
-   * shapeShift() cycles through positional ID integers [0] to [4] and
+   * shapeShift() cycles through positional ID integers [0] to [3] and
    * then returns that integer. We pass it into updateShape() which will
    * return and pass the next quartet into validMove() for deliberation.
    */
@@ -255,7 +255,7 @@ var tetris = (function() {
             clearInstructions();
           }
           fetchPost("<a href='http://bit.ly/18gECvy' id='sorry' target='_blank' " +
-                    "class='hr'>Game Over. :(</a>");
+                    "class='hr'>Game Over.</a> :(");
           gameOver();
         }
       }
@@ -317,7 +317,7 @@ var tetris = (function() {
          * The reason I'm passing linesBelow instead of deadCount is because
          * of a minor bug. Let's say dead blocks were stacked near the top
          * on the far-left side, and I clear the bottom four lines with a
-         * "straight line" shape via the empty space to get there on the
+         * "straight line" shape vie the empty space to get there on the
          * right side of the grid. Cells on the third row (y) would be
          * copied to cells on the seventh row (y + deadCount) at the end of
          * this block of code, but there's no way to duplicate an out-of-
@@ -420,7 +420,7 @@ var tetris = (function() {
    * finalAct() adds some "Game Over" functionality to be executed on an ID
    * that doesn't exist at the time the document loads. I had to use event
    * delegation on '#frame' since '#sorry' is created later ad lib. Tricky.
-   * P.S. Sorry! ¯\_(ツ)_/¯
+   * P.S. Sorry! Â¯\_(ãƒ„)_/Â¯
    */
   var finalAct = function() {
     $('#frame').on('click', '#sorry', function() {
